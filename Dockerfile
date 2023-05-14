@@ -1,4 +1,4 @@
-FROM openjdk:17-alpine
+FROM openjdk:8-alpine-jdk
 MAINTAINER DROJAS
-COPY target/drojas-0.0.1-SNAPSHOT.jar drojas-app.jar
-ENTRYPOINT ["java","-jar","/drojas-app.jar"]
+COPY target/drojas-0.0.1-SNAPSHOT.jar drojasapp.jar
+ENTRYPOINT ["java","-jar","/drojasapp.jar"]
