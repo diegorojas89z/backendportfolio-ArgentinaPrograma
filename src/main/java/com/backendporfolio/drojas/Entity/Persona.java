@@ -25,15 +25,19 @@ public class Persona {
     private String descripcion;
     
     @NotNull
+    private String cargoactual;
+    
+    @NotNull
     private String img;
 
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String descripcion, String img) {
+    public Persona(String nombre, String apellido, String descripcion, String cargoactual, String img) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.descripcion = descripcion;
+        this.cargoactual = cargoactual;
         this.img = img;
     }
 
@@ -67,6 +71,14 @@ public class Persona {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+    
+    public String getCargoactual() {
+        return cargoactual;
+    }
+
+    public void setCargoactual(String cargoactual) {
+        this.cargoactual = cargoactual;
     }
 
     public String getImg() {
